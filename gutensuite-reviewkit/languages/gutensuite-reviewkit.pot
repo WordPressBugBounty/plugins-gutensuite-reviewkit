@@ -1,0 +1,395 @@
+# Copyright (C) 2026 GutenSuite
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Reviewkit 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutensuite-reviewkit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-20T17:05:31+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: gutensuite-reviewkit\n"
+
+#. Plugin Name of the plugin
+#: gutensuite-reviewkit.php
+#: includes/Admin/Menu.php:23
+#: includes/Admin/Menu.php:24
+msgid "Reviewkit"
+msgstr ""
+
+#. Description of the plugin
+#: gutensuite-reviewkit.php
+msgid "Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions."
+msgstr ""
+
+#. Author of the plugin
+#: gutensuite-reviewkit.php
+msgid "GutenSuite"
+msgstr ""
+
+#: includes/Admin/Ajax.php:120
+msgid "You are not authorized to delete the cache"
+msgstr ""
+
+#: includes/Admin/Ajax.php:125
+msgid "Cache deleted successfully"
+msgstr ""
+
+#: includes/Admin/Menu.php:34
+msgid "Reviewkit Home"
+msgstr ""
+
+#: includes/Admin/Menu.php:35
+msgid "Home"
+msgstr ""
+
+#: includes/BusinessData.php:189
+#: includes/functions.php:89
+#: react_app/components/helper/utils.js:208
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:16
+msgid "Excellent"
+msgstr ""
+
+#: includes/BusinessData.php:191
+#: includes/functions.php:91
+#: react_app/components/helper/utils.js:209
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:17
+msgid "Great"
+msgstr ""
+
+#: includes/BusinessData.php:193
+#: includes/functions.php:93
+#: react_app/components/helper/utils.js:210
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:18
+msgid "Good"
+msgstr ""
+
+#: includes/BusinessData.php:195
+#: includes/functions.php:95
+#: react_app/components/helper/utils.js:211
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:19
+msgid "Average"
+msgstr ""
+
+#: includes/BusinessData.php:197
+#: includes/functions.php:97
+#: react_app/components/helper/utils.js:212
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:20
+msgid "Poor"
+msgstr ""
+
+#: includes/Shortcodes/MicroTrustScore.php:48
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:36
+msgid "out of"
+msgstr ""
+
+#. translators: %d: The rating number (1-5)
+#: includes/templates/cards/card-1.php:20
+#, php-format
+msgid "Rating %d stars"
+msgstr ""
+
+#: includes/templates/cards/card-1.php:27
+msgid "By"
+msgstr ""
+
+#: includes/templates/tp-review-carousel.php:14
+#: includes/templates/tp-review-grid.php:14
+msgid "Trustpilot rating"
+msgstr ""
+
+#: includes/templates/tp-review-carousel.php:19
+#: includes/templates/tp-review-grid.php:19
+msgid "Rated"
+msgstr ""
+
+#: includes/templates/tp-review-carousel.php:21
+#: includes/templates/tp-review-grid.php:21
+msgid "out of 5 based on"
+msgstr ""
+
+#: includes/templates/tp-review-carousel.php:23
+#: includes/templates/tp-review-grid.php:23
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:116
+#: react_app/components/shortcode-previews/MicroButtonPreview.jsx:24
+#: react_app/components/shortcode-previews/MiniTrustboxPreview.jsx:52
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:28
+msgid "reviews"
+msgstr ""
+
+#: includes/templates/tp-review-carousel.php:27
+#: includes/templates/tp-review-carousel.php:28
+#: includes/templates/tp-review-grid.php:27
+#: includes/templates/tp-review-grid.php:28
+#: react_app/components/shortcode-previews/MicroButtonPreview.jsx:18
+#: react_app/components/shortcode-previews/MicroComboPreview.jsx:43
+#: react_app/components/shortcode-previews/MicroReviewCountPreview.jsx:28
+#: react_app/components/shortcode-previews/MicroStarPreview.jsx:28
+#: react_app/components/shortcode-previews/MiniTrustboxPreview.jsx:24
+msgid "Trustpilot"
+msgstr ""
+
+#: includes/Traits/Singleton.php:49
+msgid "Unserializing instances of this class is forbidden."
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewCard.jsx:93
+msgid "View on Trustpilot"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:51
+msgid "No business details found"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:85
+msgid "Claimed"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:90
+msgid "Verified"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:114
+msgid "Based on"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:128
+msgid "Visit Website"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:139
+msgid "Reply Rate"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:148
+msgid "Avg. Reply Time"
+msgstr ""
+
+#: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:152
+msgid "days"
+msgstr ""
+
+#: react_app/components/helper/utils.js:219
+msgid "Mini Trustbox"
+msgstr ""
+
+#: react_app/components/helper/utils.js:221
+msgid "Compact widget showing TrustScore, star rating, and review count"
+msgstr ""
+
+#: react_app/components/helper/utils.js:225
+#: react_app/components/helper/utils.js:245
+#: react_app/components/helper/utils.js:260
+#: react_app/components/helper/utils.js:273
+#: react_app/components/helper/utils.js:286
+#: react_app/components/helper/utils.js:301
+#: react_app/components/helper/utils.js:320
+#: react_app/components/helper/utils.js:340
+#: react_app/components/helper/utils.js:357
+#: react_app/components/helper/utils.js:374
+msgid "free"
+msgstr ""
+
+#: react_app/components/helper/utils.js:239
+msgid "Starter Trustbox"
+msgstr ""
+
+#: react_app/components/helper/utils.js:241
+msgid "Interactive widget with star rating and tooltip"
+msgstr ""
+
+#: react_app/components/helper/utils.js:254
+msgid "Micro TrustScore"
+msgstr ""
+
+#: react_app/components/helper/utils.js:256
+msgid "Simple display of TrustScore rating"
+msgstr ""
+
+#: react_app/components/helper/utils.js:270
+msgid "Micro Star"
+msgstr ""
+
+#: react_app/components/helper/utils.js:272
+msgid "Interactive star rating display"
+msgstr ""
+
+#: react_app/components/helper/utils.js:283
+msgid "Micro Review Count"
+msgstr ""
+
+#: react_app/components/helper/utils.js:285
+msgid "Link showing review count"
+msgstr ""
+
+#: react_app/components/helper/utils.js:295
+msgid "Micro Button"
+msgstr ""
+
+#: react_app/components/helper/utils.js:297
+msgid "Button-style widget with review count"
+msgstr ""
+
+#: react_app/components/helper/utils.js:314
+msgid "Micro Combo"
+msgstr ""
+
+#: react_app/components/helper/utils.js:316
+msgid "Combined star rating and review count widget"
+msgstr ""
+
+#: react_app/components/helper/utils.js:334
+msgid "Review Grid"
+msgstr ""
+
+#: react_app/components/helper/utils.js:336
+msgid "Display customer reviews in a grid layout with header"
+msgstr ""
+
+#: react_app/components/helper/utils.js:351
+msgid "Review List"
+msgstr ""
+
+#: react_app/components/helper/utils.js:353
+msgid "Display customer reviews in a list layout with header"
+msgstr ""
+
+#: react_app/components/helper/utils.js:368
+msgid "Review Carousel"
+msgstr ""
+
+#: react_app/components/helper/utils.js:370
+msgid "Display customer reviews in a carousel layout with header"
+msgstr ""
+
+#: react_app/components/pages/business-widgets/index.jsx:44
+#: react_app/components/pages/shortcodes/index.jsx:68
+msgid "Preview"
+msgstr ""
+
+#: react_app/components/pages/business-widgets/index.jsx:60
+#: react_app/components/pages/review-widgets/index.jsx:51
+#: react_app/components/pages/shortcodes/index.jsx:84
+msgid "Copied!"
+msgstr ""
+
+#: react_app/components/pages/business-widgets/index.jsx:61
+#: react_app/components/pages/review-widgets/index.jsx:52
+#: react_app/components/pages/shortcodes/index.jsx:85
+msgid "Copy"
+msgstr ""
+
+#: react_app/components/pages/business-widgets/index.jsx:72
+#: react_app/components/pages/review-widgets/index.jsx:63
+#: react_app/components/pages/shortcodes/index.jsx:96
+msgid "No shortcodes found matching your search."
+msgstr ""
+
+#: react_app/components/pages/reviews/index.jsx:34
+msgid "Trustpilot URL"
+msgstr ""
+
+#: react_app/components/pages/reviews/index.jsx:36
+msgid "Enter the URL of your Trustpilot page"
+msgstr ""
+
+#: react_app/components/pages/reviews/index.jsx:51
+#: react_app/components/pages/settings/index.jsx:10
+#: react_app/components/pages/settings/index.jsx:50
+msgid "Sync Reviews"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:8
+#: react_app/components/pages/settings/index.jsx:31
+msgid "Purge"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:20
+msgid "Purging..."
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:27
+#: react_app/components/pages/settings/index.jsx:46
+msgid "Done"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:40
+msgid "Syncing..."
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:61
+msgid "Automatic Sync"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:74
+msgid "Note:"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:75
+msgid "Reviews data is updated within 24 hours interval. Hit the 'Sync Reviews' button to instantly update your reviews data"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:85
+#: react_app/components/pages/settings/index.jsx:91
+msgid "Purge Reviews Data"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:100
+msgid "Caution:"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:102
+msgid "This will delete all Reviewkit reviews and related data from your database, returning the plugin to its default settings. You will need to fetch your reviews again after purging."
+msgstr ""
+
+#: react_app/components/pages/shortcodes/index.jsx:28
+#: react_app/components/pages/widgets/index.jsx:19
+msgid "Trustpilot Shortcodes"
+msgstr ""
+
+#: react_app/components/pages/shortcodes/index.jsx:30
+#: react_app/components/pages/widgets/index.jsx:21
+msgid "Use these shortcodes to display Trustpilot widgets on your website."
+msgstr ""
+
+#: react_app/components/pages/shortcodes/index.jsx:41
+#: react_app/components/pages/widgets/index.jsx:30
+msgid "Search by name, description, or shortcode..."
+msgstr ""
+
+#: react_app/components/pages/widgets/index.jsx:45
+msgid "Business Widgets"
+msgstr ""
+
+#: react_app/components/pages/widgets/index.jsx:52
+msgid "Review Widgets"
+msgstr ""
+
+#: react_app/components/shortcode-previews/MicroComboPreview.jsx:39
+#: react_app/components/shortcode-previews/MicroReviewCountPreview.jsx:24
+msgid "reviews on"
+msgstr ""
+
+#: react_app/components/shortcode-previews/MicroReviewCountPreview.jsx:20
+msgid "See our"
+msgstr ""
+
+#: react_app/components/shortcode-previews/MiniTrustboxPreview.jsx:39
+msgid "TrustScore"
+msgstr ""
+
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:21
+msgid "Check out our"
+msgstr ""
+
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:59
+msgid "Helping each other make better choices"
+msgstr ""
+
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:62
+msgid "Read and write reviews"
+msgstr ""
