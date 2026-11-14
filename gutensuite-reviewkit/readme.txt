@@ -2,9 +2,9 @@
 Contributors: gutensuite
 Tags: trustpilot, reviews, testimonials, trust badges, social proof
 Requires at least: 6.6
-Tested up to: 7.1
+Tested up to: 7
 Requires PHP: 7.4
-Stable tag: 1.1.4
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions.
@@ -19,12 +19,17 @@ For businesses big and small, customer trust is the ultimate currency — and yo
 
 Reviewkit makes it effortless to tap into that goldmine with a single click. Our WordPress plugin automatically syncs all your Trustpilot feedback in real-time and displays it beautifully across your site (no developer needed!).
 
+
+[Upgrade to Pro](https://reviewkit.gutensuite.net/pricing)
+
 **Key Features:**
 
 * **Trustpilot Review Widgets:** Choose from multiple widget layouts and style them to match your brand. Each widget highlights star ratings, reviewer names and feedback to make reviews eye-catching.
 * **Trust & Rating Badges:** Display your TrustScore, star rating, and review count with sleek badge widgets. These instant trust seals boost credibility at a glance.
 * **Advanced Filtering:** Lets you highlight your best feedback. Filter reviews by star rating or date to display only 5-star ratings, top feedback quotes, or the newest testimonials.
 * **Easy Setup & Flexibility:** Just install and connect your Trustpilot business account — no API keys or coding required. Then use shortcodes to place reviews anywhere, from homepage to product pages.
+* **Widget Builder [Pro]
+* **Fetch More Reviews[Pro]
 
 **Showcase Your Reviews Anywhere**
 
@@ -40,7 +45,7 @@ No tech skills? No problem. Activate the plugin in minutes and connect your Trus
 
 **Available Shortcodes:**
 
-[Business Widgets Live Demo](https://reviewkit.gutensuite.net/demo/)
+
 * `[reviewkit_tp_mini]` - Mini Trustbox widget showing TrustScore, star rating, and review count
 * `[reviewkit_tp_starter]` - Starter Trustbox widget with interactive star rating and tooltip
 * `[reviewkit_tp_micro_trustscore]` - Micro Trust Score badge for simple rating display
@@ -49,7 +54,7 @@ No tech skills? No problem. Activate the plugin in minutes and connect your Trus
 * `[reviewkit_tp_micro_button]` - Micro Button widget with review count in button style
 * `[reviewkit_tp_micro_combo]` - Micro Combo widget combining star rating and review count
 
-[Review Widgets Live Demo](https://reviewkit.gutensuite.net/demo/)
+
 * `[reviewkit_review style="grid"]` - Shows reviews in a grid
 * `[reviewkit_review style="list"]` - Shows reviews in a list
 * `[reviewkit_review style="carousel"]` - Shows reviews in a carousel
@@ -67,7 +72,7 @@ No tech skills? No problem. Activate the plugin in minutes and connect your Trus
 5. Configure your display preferences and styling options.
 6. Use shortcodes to display reviews anywhere on your site.
 
-For detailed setup instructions, visit our [documentation](https://reviewkit.gutensuite.net/docs/).
+For detailed setup instructions, visit our [documentation](https://reviewkit.gutensuite.net/docs).
 
 == Frequently Asked Questions ==
 
@@ -115,6 +120,12 @@ Reviewkit is designed to work with any properly coded WordPress theme. The widge
 
 == Changelog ==
 
+= 1.2.0 - 14/11/2026 =
+- Added: Pro Feature | Fetch More Reviews
+- Added: Pro Feature | Widget Builder for Review widgets
+- Fixed: Asset loading issue in third party builder.
+- Few minor bug fixes & improvements
+
 = 1.1.4 - 23/08/2026 =
 - Tested up to WordPress version 7.1
 - Few minor bug fixes & improvements
@@ -154,9 +165,9 @@ Reviewkit is designed to work with any properly coded WordPress theme. The widge
 == Support ==
 
 For support, documentation, and feature requests, please visit:
-* [Plugin Documentation](https://reviewkit.gutensuite.net/docs/)
+* [Plugin Documentation](https://reviewkit.gutensuite.net/docs)
 * [Support Forum](https://wordpress.org/support/plugin/gutensuite-reviewkit/)
-* [Contact GutenSuite](https://gutensuite.net/contact/)
+* [Contact GutenSuite](https://reviewkit.gutensuite.net/contact)
 
 == Privacy Policy ==
 

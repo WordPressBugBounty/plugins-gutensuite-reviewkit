@@ -1,8 +1,9 @@
 <?php
 /**
  * Plugin Name:       Reviewkit
+ * Plugin URI:        https://reviewkit.gutensuite.net
  * Description:       Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions.
- * Version:           1.1.4
+ * Version:           1.2.0
  * Requires at least: 6.6
  * Requires PHP:      7.4
  * Author:            GutenSuite
@@ -37,7 +38,7 @@ if ( ! class_exists( 'Gutensuite_Reviewkit' ) ) {
 			$this->define_constants();
 			register_activation_hook( __FILE__, array( $this, 'activate' ) );
 			register_deactivation_hook( __FILE__, array( $this, 'deactivate' ) );
-			add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ) );
+			add_action( 'init', array( $this, 'on_plugins_loaded' ) );
 			add_action( 'gutensuite_reviewkit_loaded', array( $this, 'init_plugin' ) );
 			add_action( 'init', array( $this, 'init_cron' ) );
 		}
@@ -61,7 +62,7 @@ if ( ! class_exists( 'Gutensuite_Reviewkit' ) ) {
 		 * Defines CONSTANTS for Whole plugins.
 		 */
 		public function define_constants() {
-			define( 'GUTENSUITE_REVIEWKIT_VERSION', '1.1.4' );
+			define( 'GUTENSUITE_REVIEWKIT_VERSION', '1.2.0' );
 			define( 'GUTENSUITE_REVIEWKIT_SLUG', 'gutensuite-reviewkit' );
 			define( 'GUTENSUITE_REVIEWKIT_PLUGIN_ROOT_URI', plugins_url( '/', __FILE__ ) );
 			define( 'GUTENSUITE_REVIEWKIT_ROOT_DIR_PATH', plugin_dir_path( __FILE__ ) );
@@ -166,12 +167,13 @@ if ( ! function_exists( 'gutensuite_reviewkit_fs' ) ) {
 					'type'           => 'plugin',
 					'public_key'     => 'pk_4d847aee16a8defb333dd6594503c',
 					'is_premium'     => false,
-					'has_addons'     => false,
+					'has_addons'     => true,
 					'has_paid_plans' => false,
 					'menu'           => array(
 						'slug'    => 'gutensuite/reviewkit',
-						'account' => false,
-						'contact' => false,
+						'account' => true,
+						'contact' => true,
+						'support' => true,
 					),
 				)
 			);

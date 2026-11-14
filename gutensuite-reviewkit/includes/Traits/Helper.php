@@ -100,5 +100,6 @@ trait Helper {
 	public function delete_cache_data() {
 		global $wpdb;
 		$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", 'gutensuite_reviewkit_tp_%' ) );
+		wp_cache_flush();
 	}
 }

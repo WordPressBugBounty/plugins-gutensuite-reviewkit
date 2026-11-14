@@ -39,6 +39,7 @@ abstract class BaseShortcode {
 	 * @return string
 	 */
 	public function render( $atts = array(), $content = null ) {
+		wp_enqueue_style( 'gutensuite-reviewkit-shortcodes' );
 		$atts = shortcode_atts( $this->default_attributes, $atts, $this->tag );
 		$atts = $this->sanitize_attributes( $atts );
 		return $this->generate_html( $atts, $content );

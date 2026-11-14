@@ -18,6 +18,7 @@ class Assets {
 		if ( ! in_array( $hook, $this->pages, true ) ) {
 			return;
 		}
+		remove_all_actions( 'admin_notices' );
 		$dependencies = include_once GUTENSUITE_REVIEWKIT_ASSETS_DIR_PATH . 'js/gutensuite-reviewkit.core.min.asset.php';
 		wp_enqueue_style( 'gutensuite-reviewkit-admin', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'js/gutensuite-reviewkit.core.min.css', array( 'wp-components' ), $dependencies['version'], 'all' );
 		wp_enqueue_script(
@@ -27,7 +28,7 @@ class Assets {
 			$dependencies['version'],
 			true
 		);
-		wp_set_script_translations('gutensuite-reviewkit', 'gutensuite-reviewkit');
+		wp_set_script_translations('gutensuite-reviewkit', 'gutensuite-reviewkit', GUTENSUITE_REVIEWKIT_ROOT_DIR_PATH . 'languages');
 
 		wp_enqueue_style(
 			'gutensuite-reviewkit-shortcodes',
@@ -50,6 +51,9 @@ class Assets {
 				'last_updated'    => $cache_data['last_updated'] ?? null,
 				'original_domain' => $cache_data['original_domain'] ?? '',
 				'domain'          => $cache_data['domain'] ?? '',
+				'tp_api'          => GUTENSUITE_REVIEWKIT_TP_API,
+				'is_pro_enabled'  => apply_filters('gutensuite/reviewkit/pro_enabled', false),
+				'global_settings' => apply_filters('gutensuite/reviewkit/settings', array() ),
 			)
 		);
 	}
@@ -58,26 +62,38 @@ class Assets {
 	 * Enqueue frontend assets for shortcodes
 	 */
 	public function enqueue_frontend_assets() {
-		if ( ! \Gutensuite\Reviewkit\Shortcodes::has_shortcodes_on_page() ) {
-			return;
-		}
+		// if ( ! \Gutensuite\Reviewkit\Shortcodes::has_shortcodes_on_page() ) {
+		// 	return;
+		// }
 
 		if ( ! file_exists( GUTENSUITE_REVIEWKIT_ASSETS_DIR_PATH . 'js/gutensuite-shortcode/index.min.css' ) ) {
 			return;
 		}
 
-		wp_enqueue_style(
+		wp_register_style(
 			'gutensuite-reviewkit-shortcodes',
 			GUTENSUITE_REVIEWKIT_ASSETS_URI . 'js/gutensuite-shortcode/index.min.css',
 			array(),
-			time()
+			GUTENSUITE_REVIEWKIT_VERSION
 		);
 	}
 
 	public function enqueue_library_assets() {
 		wp_register_style( 'gutensuite-reviewkit-swiper', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'lib/swiper.min.css', array(), GUTENSUITE_REVIEWKIT_VERSION );
 		wp_register_script( 'gutensuite-reviewkit-swiper', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'lib/swiper.min.js', array(), GUTENSUITE_REVIEWKIT_VERSION, true );
-		wp_register_script( 'gutensuite-reviewkit-review-carousel', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'lib/review-carousel.js', array( 'jquery', 'gutensuite-reviewkit-swiper' ), time(), true );
+		wp_register_script( 'gutensuite-reviewkit-review-carousel', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'lib/review-carousel.js', array( 'jquery', 'gutensuite-reviewkit-swiper' ), GUTENSUITE_REVIEWKIT_VERSION, true );
+
+		wp_register_style( 'gutensuite-reviewkit-pagination', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'js/gutensuite-shortcode/index.min.css', array(), time() );
+		wp_register_script( 'gutensuite-reviewkit-pagination', GUTENSUITE_REVIEWKIT_ASSETS_URI . 'lib/review-grid-pagination.js', array( 'jquery' ), time(), true );
+		
+		wp_localize_script(
+			'gutensuite-reviewkit-pagination',
+			'gutensuite_reviewkit_pagination',
+			array(
+				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'nonce'   => wp_create_nonce( 'gutensuite_reviewkit_pagination_nonce' ),
+			)
+		);
 	}
 
 

@@ -25,8 +25,7 @@ class Menu {
 			'manage_options',
 			'gutensuite/reviewkit',
 			array( $this, 'load_main_template' ),
-			'dashicons-star-half',
-			6
+			'dashicons-star-half'
 		);
 
 		add_submenu_page(
@@ -37,12 +36,13 @@ class Menu {
 			'gutensuite/reviewkit',
 			array( $this, 'load_main_template' )
 		);
+		apply_filters( 'gutensuite/reviewkit/license_page', false );
 	}
 
 	/**
 	 * dashboard root
 	 *
-	 * @return hooks
+	 * @return void
 	 */
 	public function load_main_template() {
 		echo '<div id="gutensuite-reviewkit-body" class="gutensuite-reviewkit-body"></div>';

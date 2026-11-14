@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) || exit;
 
 if ( ! function_exists( 'gtp_get_business_data' ) ) {
 	function gtp_get_business_data() {
@@ -124,5 +125,51 @@ if ( ! function_exists( 'gtp_times_ago' ) ) {
 				return 'about ' . $t . ' ' . $str . ( $t > 1 ? 's' : '' ) . ' ago';
 			}
 		}
+	}
+}
+
+if( !function_exists( 'gtp_get_sorted_reviews' ) ) {
+	function gtp_get_sorted_reviews( $reviews, $sort ) {
+		if ( ! empty( $sort ) && ! empty( $reviews ) ) {
+			switch ( $sort ) {
+				case 'date_newest':
+					usort( $reviews, function( $a, $b ) {
+						$date_a = strtotime( $a['dates']['experiencedDate'] );
+						$date_b = strtotime( $b['dates']['experiencedDate'] );
+						return $date_b - $date_a;
+					});
+					break;
+		
+				case 'date_oldest':
+					usort( $reviews, function( $a, $b ) {
+						$date_a = strtotime( $a['dates']['experiencedDate'] );
+						$date_b = strtotime( $b['dates']['experiencedDate'] );
+						return $date_a - $date_b;
+					});
+					break;
+		
+				case 'review_high_low':
+					usort( $reviews, function( $a, $b ) {
+						return (int) $b['rating'] - (int) $a['rating'];
+					});
+					break;
+		
+				case 'review_low_high':
+					usort( $reviews, function( $a, $b ) {
+						return (int) $a['rating'] - (int) $b['rating'];
+					});
+					break;
+			}
+		}
+		return $reviews;
+	}
+}
+
+if( ! function_exists( 'gtp_get_truncated_review_text' ) ) {
+	function gtp_get_truncated_review_text( $text, $length = 120 ) {
+		if( strlen( $text ) > (int) $length ) {
+			return substr( $text, 0, $length ) . '...';
+		}
+		return $text;
 	}
 }

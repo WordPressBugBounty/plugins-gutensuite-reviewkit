@@ -5,6 +5,8 @@
  * @package Gutensuite_Reviewkit
  */
 
+defined( 'ABSPATH' ) || exit;
+
 $rating_text = gtp_get_rating_text();
 ?>
 <section class="gutensuite-reviewkit-wrap">

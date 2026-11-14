@@ -5,7 +5,32 @@
  * @package Gutensuite_Reviewkit
  */
 
+defined( 'ABSPATH' ) || exit;
+
 $rating_text = gtp_get_rating_text();
+
+$carousel_settings = array(
+	'autoplay'        => true,
+	'delay'           => 3000,
+	'loop'            => true,
+	'pause_on_hover'  => true,
+	'slides_per_view' => array(
+		'desktop' => 3,
+		'tablet'  => 2,
+		'mobile'  => 1.2,
+	),
+	'space_between'   => array(
+		'desktop' => 20,
+		'tablet'  => 10,
+		'mobile'  => 5,
+	),
+	'pagination'      => 'bullets',
+	'navigation'      => true,
+	'centeredSlides'  => false,
+	'speed'           => 400,
+);
+
+	$carousel_settings = wp_json_encode( $carousel_settings );
 ?>
 <section class="gutensuite-reviewkit-wrap">
 	<header class="gutensuite-reviewkit-header">
@@ -31,7 +56,7 @@ $rating_text = gtp_get_rating_text();
 	</header>
 
 	<div class="style-<?php echo esc_attr( $atts['style'] ?? 'carousel' ); ?>">
-		<div class="grr-swiper-activation swiper swiper-container">
+		<div class="grr-swiper-activation swiper swiper-container" data-carousel-settings="<?php echo esc_attr( $carousel_settings ); ?>">
 			<div class="swiper-wrapper">
 				<?php if ( ! empty( $review_data ) ) : ?>
 					<?php

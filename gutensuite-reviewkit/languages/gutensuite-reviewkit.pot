@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Reviewkit 1.1.1\n"
+"Project-Id-Version: Reviewkit 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutensuite-reviewkit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-20T17:05:31+00:00\n"
+"POT-Creation-Date: 2026-11-14T15:41:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutensuite-reviewkit\n"
@@ -19,6 +19,11 @@ msgstr ""
 #: includes/Admin/Menu.php:23
 #: includes/Admin/Menu.php:24
 msgid "Reviewkit"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: gutensuite-reviewkit.php
+msgid "https://reviewkit.gutensuite.net"
 msgstr ""
 
 #. Description of the plugin
@@ -31,53 +36,79 @@ msgstr ""
 msgid "GutenSuite"
 msgstr ""
 
-#: includes/Admin/Ajax.php:120
+#: includes/Admin/Ajax.php:51
+msgid "Settings saved successfully"
+msgstr ""
+
+#: includes/Admin/Ajax.php:149
 msgid "You are not authorized to delete the cache"
 msgstr ""
 
-#: includes/Admin/Ajax.php:125
+#: includes/Admin/Ajax.php:154
 msgid "Cache deleted successfully"
 msgstr ""
 
-#: includes/Admin/Menu.php:34
+#: includes/Admin/Menu.php:33
 msgid "Reviewkit Home"
 msgstr ""
 
-#: includes/Admin/Menu.php:35
+#: includes/Admin/Menu.php:34
 msgid "Home"
 msgstr ""
 
+#: includes/Admin/Notice.php:207
+msgid "Introducing Reviewkit Pro"
+msgstr ""
+
+#. translators: %s: promotion link
+#: includes/Admin/Notice.php:213
+#, php-format
+msgid "Build review widgets without code, now at %s."
+msgstr ""
+
+#: includes/Admin/Notice.php:214
+msgid "Black Friday prices"
+msgstr ""
+
+#: includes/Admin/Notice.php:219
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/Admin/Notice.php:261
+msgid "You are not allowed to do that."
+msgstr ""
+
 #: includes/BusinessData.php:189
-#: includes/functions.php:89
-#: react_app/components/helper/utils.js:208
+#: includes/functions.php:90
+#: react_app/components/helper/utils.js:210
 #: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:16
 msgid "Excellent"
 msgstr ""
 
 #: includes/BusinessData.php:191
-#: includes/functions.php:91
-#: react_app/components/helper/utils.js:209
+#: includes/functions.php:92
+#: react_app/components/helper/utils.js:211
 #: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:17
 msgid "Great"
 msgstr ""
 
 #: includes/BusinessData.php:193
-#: includes/functions.php:93
-#: react_app/components/helper/utils.js:210
+#: includes/functions.php:94
+#: react_app/components/helper/utils.js:212
 #: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:18
 msgid "Good"
 msgstr ""
 
 #: includes/BusinessData.php:195
-#: includes/functions.php:95
-#: react_app/components/helper/utils.js:211
+#: includes/functions.php:96
+#: react_app/components/helper/utils.js:213
 #: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:19
 msgid "Average"
 msgstr ""
 
 #: includes/BusinessData.php:197
-#: includes/functions.php:97
-#: react_app/components/helper/utils.js:212
+#: includes/functions.php:98
+#: react_app/components/helper/utils.js:214
 #: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:20
 msgid "Poor"
 msgstr ""
@@ -97,23 +128,24 @@ msgstr ""
 msgid "By"
 msgstr ""
 
-#: includes/templates/tp-review-carousel.php:14
-#: includes/templates/tp-review-grid.php:14
+#: includes/templates/tp-review-carousel.php:39
+#: includes/templates/tp-review-grid.php:16
 msgid "Trustpilot rating"
 msgstr ""
 
-#: includes/templates/tp-review-carousel.php:19
-#: includes/templates/tp-review-grid.php:19
+#: includes/templates/tp-review-carousel.php:44
+#: includes/templates/tp-review-grid.php:21
 msgid "Rated"
 msgstr ""
 
-#: includes/templates/tp-review-carousel.php:21
-#: includes/templates/tp-review-grid.php:21
+#: includes/templates/tp-review-carousel.php:46
+#: includes/templates/tp-review-grid.php:23
 msgid "out of 5 based on"
 msgstr ""
 
-#: includes/templates/tp-review-carousel.php:23
-#: includes/templates/tp-review-grid.php:23
+#: includes/templates/tp-review-carousel.php:48
+#: includes/templates/tp-review-grid.php:25
+#: react_app/components/containers/reviews/ReviewList.jsx:144
 #: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:116
 #: react_app/components/shortcode-previews/MicroButtonPreview.jsx:24
 #: react_app/components/shortcode-previews/MiniTrustboxPreview.jsx:52
@@ -121,15 +153,17 @@ msgstr ""
 msgid "reviews"
 msgstr ""
 
-#: includes/templates/tp-review-carousel.php:27
-#: includes/templates/tp-review-carousel.php:28
-#: includes/templates/tp-review-grid.php:27
-#: includes/templates/tp-review-grid.php:28
+#: includes/templates/tp-review-carousel.php:52
+#: includes/templates/tp-review-carousel.php:53
+#: includes/templates/tp-review-grid.php:29
+#: includes/templates/tp-review-grid.php:30
 #: react_app/components/shortcode-previews/MicroButtonPreview.jsx:18
 #: react_app/components/shortcode-previews/MicroComboPreview.jsx:43
 #: react_app/components/shortcode-previews/MicroReviewCountPreview.jsx:28
 #: react_app/components/shortcode-previews/MicroStarPreview.jsx:28
+#: react_app/components/shortcode-previews/MicroTrustScorePreview.jsx:45
 #: react_app/components/shortcode-previews/MiniTrustboxPreview.jsx:24
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:48
 msgid "Trustpilot"
 msgstr ""
 
@@ -137,8 +171,56 @@ msgstr ""
 msgid "Unserializing instances of this class is forbidden."
 msgstr ""
 
+#: react_app/components/containers/preview/image.jsx:9
+#: react_app/components/containers/preview/image.jsx:18
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:45
+msgid "Trustpilot Logo"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewCard.jsx:78
+msgid "Experience date:"
+msgstr ""
+
 #: react_app/components/containers/reviews/ReviewCard.jsx:93
 msgid "View on Trustpilot"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:65
+msgid "No reviews available"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:75
+msgid "Client Reviews"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:85
+msgid "All"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:106
+msgid "No reviews found for the selected rating"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:126
+#: react_app/components/pages/settings/global-options.jsx:46
+#: react_app/components/teasers/builder-modal/display-settings.jsx:94
+msgid "Load More"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:127
+msgid "remaining"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:133
+msgid "Show Less"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:142
+msgid "Showing"
+msgstr ""
+
+#: react_app/components/containers/reviews/ReviewList.jsx:143
+msgid "of"
 msgstr ""
 
 #: react_app/components/containers/reviews/TrustpilotBusinessPage.jsx:51
@@ -173,97 +255,127 @@ msgstr ""
 msgid "days"
 msgstr ""
 
-#: react_app/components/helper/utils.js:219
-msgid "Mini Trustbox"
+#: react_app/components/helper/input-fields.js:84
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:11
+msgid "Desktop"
+msgstr ""
+
+#: react_app/components/helper/input-fields.js:85
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:12
+msgid "Tablet"
+msgstr ""
+
+#: react_app/components/helper/input-fields.js:86
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:13
+msgid "Mobile"
 msgstr ""
 
 #: react_app/components/helper/utils.js:221
+msgid "Mini Trustbox"
+msgstr ""
+
+#: react_app/components/helper/utils.js:223
 msgid "Compact widget showing TrustScore, star rating, and review count"
 msgstr ""
 
-#: react_app/components/helper/utils.js:225
-#: react_app/components/helper/utils.js:245
-#: react_app/components/helper/utils.js:260
-#: react_app/components/helper/utils.js:273
-#: react_app/components/helper/utils.js:286
-#: react_app/components/helper/utils.js:301
-#: react_app/components/helper/utils.js:320
-#: react_app/components/helper/utils.js:340
-#: react_app/components/helper/utils.js:357
-#: react_app/components/helper/utils.js:374
+#: react_app/components/helper/utils.js:227
+#: react_app/components/helper/utils.js:247
+#: react_app/components/helper/utils.js:262
+#: react_app/components/helper/utils.js:275
+#: react_app/components/helper/utils.js:288
+#: react_app/components/helper/utils.js:303
+#: react_app/components/helper/utils.js:322
 msgid "free"
 msgstr ""
 
-#: react_app/components/helper/utils.js:239
+#: react_app/components/helper/utils.js:241
 msgid "Starter Trustbox"
 msgstr ""
 
-#: react_app/components/helper/utils.js:241
+#: react_app/components/helper/utils.js:243
 msgid "Interactive widget with star rating and tooltip"
 msgstr ""
 
-#: react_app/components/helper/utils.js:254
+#: react_app/components/helper/utils.js:256
 msgid "Micro TrustScore"
 msgstr ""
 
-#: react_app/components/helper/utils.js:256
+#: react_app/components/helper/utils.js:258
 msgid "Simple display of TrustScore rating"
 msgstr ""
 
-#: react_app/components/helper/utils.js:270
+#: react_app/components/helper/utils.js:272
 msgid "Micro Star"
 msgstr ""
 
-#: react_app/components/helper/utils.js:272
+#: react_app/components/helper/utils.js:274
 msgid "Interactive star rating display"
 msgstr ""
 
-#: react_app/components/helper/utils.js:283
+#: react_app/components/helper/utils.js:285
 msgid "Micro Review Count"
 msgstr ""
 
-#: react_app/components/helper/utils.js:285
+#: react_app/components/helper/utils.js:287
 msgid "Link showing review count"
 msgstr ""
 
-#: react_app/components/helper/utils.js:295
+#: react_app/components/helper/utils.js:297
 msgid "Micro Button"
 msgstr ""
 
-#: react_app/components/helper/utils.js:297
+#: react_app/components/helper/utils.js:299
 msgid "Button-style widget with review count"
 msgstr ""
 
-#: react_app/components/helper/utils.js:314
+#: react_app/components/helper/utils.js:316
 msgid "Micro Combo"
 msgstr ""
 
-#: react_app/components/helper/utils.js:316
+#: react_app/components/helper/utils.js:318
 msgid "Combined star rating and review count widget"
 msgstr ""
 
-#: react_app/components/helper/utils.js:334
+#: react_app/components/helper/utils.js:336
+#: react_app/components/teasers/widgets-builder/index.jsx:52
 msgid "Review Grid"
 msgstr ""
 
-#: react_app/components/helper/utils.js:336
+#: react_app/components/helper/utils.js:338
 msgid "Display customer reviews in a grid layout with header"
 msgstr ""
 
-#: react_app/components/helper/utils.js:351
+#: react_app/components/helper/utils.js:353
+#: react_app/components/teasers/widgets-builder/index.jsx:96
 msgid "Review List"
 msgstr ""
 
-#: react_app/components/helper/utils.js:353
+#: react_app/components/helper/utils.js:355
 msgid "Display customer reviews in a list layout with header"
 msgstr ""
 
-#: react_app/components/helper/utils.js:368
+#: react_app/components/helper/utils.js:370
 msgid "Review Carousel"
 msgstr ""
 
-#: react_app/components/helper/utils.js:370
+#: react_app/components/helper/utils.js:372
 msgid "Display customer reviews in a carousel layout with header"
+msgstr ""
+
+#: react_app/components/helper/utils.js:418
+msgid "Dashboard"
+msgstr ""
+
+#: react_app/components/helper/utils.js:419
+msgid "Widgets"
+msgstr ""
+
+#: react_app/components/helper/utils.js:420
+msgid "Widgets Builder"
+msgstr ""
+
+#: react_app/components/helper/utils.js:421
+msgid "Settings"
 msgstr ""
 
 #: react_app/components/pages/business-widgets/index.jsx:44
@@ -271,20 +383,8 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: react_app/components/pages/business-widgets/index.jsx:60
-#: react_app/components/pages/review-widgets/index.jsx:51
-#: react_app/components/pages/shortcodes/index.jsx:84
-msgid "Copied!"
-msgstr ""
-
-#: react_app/components/pages/business-widgets/index.jsx:61
-#: react_app/components/pages/review-widgets/index.jsx:52
-#: react_app/components/pages/shortcodes/index.jsx:85
-msgid "Copy"
-msgstr ""
-
-#: react_app/components/pages/business-widgets/index.jsx:72
-#: react_app/components/pages/review-widgets/index.jsx:63
+#: react_app/components/pages/business-widgets/index.jsx:74
+#: react_app/components/pages/review-widgets/index.jsx:75
 #: react_app/components/pages/shortcodes/index.jsx:96
 msgid "No shortcodes found matching your search."
 msgstr ""
@@ -297,75 +397,190 @@ msgstr ""
 msgid "Enter the URL of your Trustpilot page"
 msgstr ""
 
-#: react_app/components/pages/reviews/index.jsx:51
-#: react_app/components/pages/settings/index.jsx:10
-#: react_app/components/pages/settings/index.jsx:50
+#: react_app/components/pages/reviews/index.jsx:42
+msgid "https://www.trustpilot.com/review/your-business-url"
+msgstr ""
+
+#: react_app/components/pages/reviews/index.jsx:54
+#: react_app/components/pages/settings/index.jsx:21
+#: react_app/components/pages/settings/index.jsx:71
 msgid "Sync Reviews"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:8
-#: react_app/components/pages/settings/index.jsx:31
+#: react_app/components/pages/settings/carousel-options.jsx:9
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:48
+#: react_app/components/teasers/builder-modal/index.jsx:96
+msgid "Carousel Options"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:18
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:63
+#: react_app/components/teasers/reviewgrid/index.jsx:125
+msgid "Autoplay"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:26
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:118
+msgid "Autoplay Delay (ms)"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:34
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:149
+msgid "Loop"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:41
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:170
+msgid "Slides Per View"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:48
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:202
+msgid "Space Between (px)"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:56
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:228
+#: react_app/components/teasers/builder-modal/display-settings.jsx:90
+msgid "Pagination"
+msgstr ""
+
+#: react_app/components/pages/settings/carousel-options.jsx:64
+msgid "Navigation"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:9
+msgid "Reviews Options"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:18
+msgid "Minimum Star"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:33
+msgid "Reviews per page"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:41
+#: react_app/components/teasers/reviewgrid/index.jsx:17
+msgid "Pagination Control"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:43
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:4
+#: react_app/components/teasers/builder-modal/display-settings.jsx:93
+msgid "None"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:50
+#: react_app/components/teasers/builder-modal/display-settings.jsx:95
+msgid "Numbered"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:60
+#: react_app/components/teasers/reviewgrid/index.jsx:22
+msgid "Sort Options"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:64
+#: react_app/components/teasers/reviewgrid/index.jsx:24
+msgid "Date (Newest)"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:68
+msgid "Date (Oldest)"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:72
+msgid "Review (High to Low)"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:76
+msgid "Review (Low to High)"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:86
+#: react_app/components/teasers/reviewgrid/index.jsx:33
+msgid "Review Text Length Limit"
+msgstr ""
+
+#: react_app/components/pages/settings/global-options.jsx:93
+#: react_app/components/teasers/builder-modal/display-settings.jsx:100
+msgid "Columns Per Row"
+msgstr ""
+
+#: react_app/components/pages/settings/index.jsx:19
+#: react_app/components/pages/settings/index.jsx:52
 msgid "Purge"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:20
+#: react_app/components/pages/settings/index.jsx:41
 msgid "Purging..."
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:27
-#: react_app/components/pages/settings/index.jsx:46
+#: react_app/components/pages/settings/index.jsx:48
+#: react_app/components/pages/settings/index.jsx:67
 msgid "Done"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:40
+#: react_app/components/pages/settings/index.jsx:61
 msgid "Syncing..."
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:61
+#: react_app/components/pages/settings/index.jsx:120
 msgid "Automatic Sync"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:74
+#: react_app/components/pages/settings/index.jsx:133
 msgid "Note:"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:75
+#: react_app/components/pages/settings/index.jsx:134
 msgid "Reviews data is updated within 24 hours interval. Hit the 'Sync Reviews' button to instantly update your reviews data"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:85
-#: react_app/components/pages/settings/index.jsx:91
+#: react_app/components/pages/settings/index.jsx:144
+#: react_app/components/pages/settings/index.jsx:150
 msgid "Purge Reviews Data"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:100
+#: react_app/components/pages/settings/index.jsx:159
 msgid "Caution:"
 msgstr ""
 
-#: react_app/components/pages/settings/index.jsx:102
+#: react_app/components/pages/settings/index.jsx:161
 msgid "This will delete all Reviewkit reviews and related data from your database, returning the plugin to its default settings. You will need to fetch your reviews again after purging."
 msgstr ""
 
 #: react_app/components/pages/shortcodes/index.jsx:28
-#: react_app/components/pages/widgets/index.jsx:19
+#: react_app/components/pages/widgets/index.jsx:20
 msgid "Trustpilot Shortcodes"
 msgstr ""
 
 #: react_app/components/pages/shortcodes/index.jsx:30
-#: react_app/components/pages/widgets/index.jsx:21
+#: react_app/components/pages/widgets/index.jsx:22
 msgid "Use these shortcodes to display Trustpilot widgets on your website."
 msgstr ""
 
 #: react_app/components/pages/shortcodes/index.jsx:41
-#: react_app/components/pages/widgets/index.jsx:30
+#: react_app/components/pages/widgets/index.jsx:31
+#: react_app/components/teasers/widgets-builder/index.jsx:32
 msgid "Search by name, description, or shortcode..."
 msgstr ""
 
-#: react_app/components/pages/widgets/index.jsx:45
+#: react_app/components/pages/shortcodes/index.jsx:84
+msgid "Copied!"
+msgstr ""
+
+#: react_app/components/pages/shortcodes/index.jsx:85
+msgid "Copy"
+msgstr ""
+
+#: react_app/components/pages/widgets/index.jsx:48
 msgid "Business Widgets"
 msgstr ""
 
-#: react_app/components/pages/widgets/index.jsx:52
+#: react_app/components/pages/widgets/index.jsx:57
 msgid "Review Widgets"
 msgstr ""
 
@@ -386,10 +601,335 @@ msgstr ""
 msgid "Check out our"
 msgstr ""
 
-#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:59
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:61
 msgid "Helping each other make better choices"
 msgstr ""
 
-#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:62
+#: react_app/components/shortcode-previews/StarterTrustboxPreview.jsx:64
 msgid "Read and write reviews"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:5
+msgid "Bullets"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:6
+msgid "Fraction"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:7
+msgid "Progress Bar"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:51
+msgid "Configure carousel behavior (autoplay, speed, slides, etc.)."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:66
+msgid "Automatically advance slides at a set interval."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:89
+msgid "Pause on Hover"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:92
+msgid "Pause autoplay when the user hovers over the carousel."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:123
+msgid "e.g. 3000"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:133
+msgid "Speed (ms)"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:138
+msgid "e.g. 300"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:152
+msgid "Continuously loop through slides without stopping at the ends."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:214
+msgid "e.g. 16"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:248
+msgid "Arrow Navigation"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/carousel-settings.jsx:251
+msgid "Show previous and next arrow buttons on the carousel."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/display-settings.jsx:20
+msgid "Display Options"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/display-settings.jsx:29
+msgid "Show Reviewer Avatars"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/display-settings.jsx:32
+msgid "Display the profile picture next to the review author."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/display-settings.jsx:50
+msgid "Enable Lazy Loading"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/display-settings.jsx:53
+msgid "Improve page speed by loading images on scroll."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:17
+msgid "Review Filtering"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:20
+msgid "Control which reviews are displayed in this widget."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:30
+msgid "Minimum Star Rating"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:37
+msgid "Any Rating"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:38
+msgid "5 Stars Only"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:39
+msgid "4 Stars &amp; Up"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:40
+msgid "3 Stars &amp; Up"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:41
+msgid "2 Stars &amp; Up"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:42
+msgid "1 Star &amp; Up"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:48
+msgid "Sort Order"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:55
+msgid "Most Recent First"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:56
+msgid "Highest Rated First"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:57
+msgid "Lowest Rated First"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:63
+msgid "Reviews Per Page"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:70
+msgid "Show 10 Reviews"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:71
+msgid "Show 20 Reviews"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:72
+msgid "Show 50 Reviews"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:78
+msgid "Character Limit"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/filters-settings.jsx:83
+msgid "e.g. 150"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:20
+msgid "Widget Configuration"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:23
+msgid "Choose a layout style and name your widget."
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:32
+msgid "Widget Name"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:37
+msgid "e.g. Homepage Testimonials Carousel"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:48
+msgid "Select Layout Type"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:61
+msgid "Grid View"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:75
+msgid "List View"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/general-settings.jsx:89
+#: react_app/components/teasers/reviewgrid/index.jsx:118
+#: react_app/components/teasers/widgets-builder/index.jsx:140
+msgid "Carousel"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:63
+msgid "General & Layout"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:74
+msgid "Content Filters"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:85
+msgid "Display Settings"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:105
+#: react_app/components/teasers/builder-modal/index.jsx:113
+msgid "Create New Widget"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:117
+msgid "Close modal"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:188
+msgid "Cancel"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:191
+msgid "Create Widget"
+msgstr ""
+
+#: react_app/components/teasers/builder-modal/index.jsx:210
+#: react_app/components/teasers/components/utils.jsx:39
+msgid "PRO"
+msgstr ""
+
+#: react_app/components/teasers/components/utils.jsx:5
+#: react_app/components/teasers/reviewgrid/index.jsx:93
+msgid "Advanced"
+msgstr ""
+
+#: react_app/components/teasers/components/utils.jsx:16
+#: react_app/components/teasers/reviewgrid/index.jsx:95
+#: react_app/components/teasers/reviewgrid/index.jsx:120
+msgid "Pro"
+msgstr ""
+
+#: react_app/components/teasers/components/utils.jsx:41
+msgid "Upgrade to unlock multiple widgets"
+msgstr ""
+
+#: react_app/components/teasers/components/utils.jsx:44
+msgid "Create unlimited Trustpilot shortcodes and manage all your widgets from a single place."
+msgstr ""
+
+#: react_app/components/teasers/components/utils.jsx:50
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:7
+msgid "Minimum Star Filter"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:9
+msgid "5 Stars"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:12
+msgid "Minimum Review Count"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:14
+msgid "10+"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:19
+msgid "10 per page"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:35
+msgid "100 characters"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:38
+msgid "Show/Hide Reviewer Avatars"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:45
+msgid "Lazy Loading / Infinite Scroll"
+msgstr ""
+
+#: react_app/components/teasers/reviewgrid/index.jsx:50
+msgid "Custom CSS Class"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:27
+msgid "Add New Widget"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:48
+msgid "Homepage Reviews Grid"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:54
+msgid "Created Oct 24, 2023"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:61
+#: react_app/components/teasers/widgets-builder/index.jsx:105
+#: react_app/components/teasers/widgets-builder/index.jsx:149
+msgid "Copy Shortcode"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:70
+#: react_app/components/teasers/widgets-builder/index.jsx:114
+#: react_app/components/teasers/widgets-builder/index.jsx:158
+msgid "Edit"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:77
+#: react_app/components/teasers/widgets-builder/index.jsx:121
+#: react_app/components/teasers/widgets-builder/index.jsx:165
+msgid "Delete"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:92
+msgid "Product Page List"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:98
+msgid "Created Nov 02, 2023"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:136
+msgid "Footer Testimonial Carousel"
+msgstr ""
+
+#: react_app/components/teasers/widgets-builder/index.jsx:142
+msgid "Created Nov 15, 2023"
 msgstr ""
