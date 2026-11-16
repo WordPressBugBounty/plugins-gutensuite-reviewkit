@@ -2,9 +2,9 @@
 Contributors: gutensuite
 Tags: trustpilot, reviews, testimonials, trust badges, social proof
 Requires at least: 6.6
-Tested up to: 7
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions.
@@ -119,6 +119,11 @@ Reviewkit is designed to work with any properly coded WordPress theme. The widge
 
 
 == Changelog ==
+
+= 1.2.1 - 16/11/2026 =
+- Improved: Review card grid sizing and Pro upgrade button hover/focus styles
+- Changed: Pro upgrade CTAs now link to the pricing page
+- Few minor bug fixes & improvements
 
 = 1.2.0 - 14/11/2026 =
 - Added: Pro Feature | Fetch More Reviews
