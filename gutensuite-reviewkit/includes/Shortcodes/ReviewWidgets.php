@@ -45,6 +45,7 @@ class ReviewWidgets {
 		
 		unset($atts['carousel']);
 
+		wp_enqueue_style( 'gutensuite-reviewkit-shortcodes' );
 		$file = apply_filters( 'gutensuite_reviewkit/tp_review_grid_template', GUTENSUITE_REVIEWKIT_ROOT_DIR_PATH . 'includes/templates/tp-review-grid.php', $atts );
 
 		if( !file_exists( $file ) ) {
