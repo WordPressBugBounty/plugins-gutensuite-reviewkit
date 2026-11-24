@@ -63,6 +63,7 @@ class ReviewWidgets {
 
 		unset($atts['per_column']);
 
+		wp_enqueue_style( 'gutensuite-reviewkit-shortcodes' );
 		wp_enqueue_style( 'gutensuite-reviewkit-swiper' );
 		wp_enqueue_script( 'gutensuite-reviewkit-review-carousel' );
 

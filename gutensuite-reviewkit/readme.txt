@@ -4,7 +4,7 @@ Tags: trustpilot, reviews, testimonials, trust badges, social proof
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions.
@@ -119,6 +119,10 @@ Reviewkit is designed to work with any properly coded WordPress theme. The widge
 
 
 == Changelog ==
+
+= 1.2.3 - 24/11/2026 =
+- Fixed: Bug | Assets not loading in Review Carousel Widget
+- Few minor bug fixes & improvements
 
 = 1.2.2 - 18/11/2026 =
 - Fixed: Bug | Assets not loading in Review Widgets 
