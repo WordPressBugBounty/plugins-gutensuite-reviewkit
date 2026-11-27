@@ -3,7 +3,7 @@
  * Plugin Name:       Reviewkit
  * Plugin URI:        https://reviewkit.gutensuite.net
  * Description:       Easily embed and showcase Trustpilot reviews on your WordPress site to build trust and boost conversions.
- * Version:           1.2.3
+ * Version:           1.2.4
  * Requires at least: 6.6
  * Requires PHP:      7.4
  * Author:            GutenSuite
@@ -62,7 +62,7 @@ if ( ! class_exists( 'Gutensuite_Reviewkit' ) ) {
 		 * Defines CONSTANTS for Whole plugins.
 		 */
 		public function define_constants() {
-			define( 'GUTENSUITE_REVIEWKIT_VERSION', '1.2.3' );
+			define( 'GUTENSUITE_REVIEWKIT_VERSION', '1.2.4' );
 			define( 'GUTENSUITE_REVIEWKIT_SLUG', 'gutensuite-reviewkit' );
 			define( 'GUTENSUITE_REVIEWKIT_PLUGIN_ROOT_URI', plugins_url( '/', __FILE__ ) );
 			define( 'GUTENSUITE_REVIEWKIT_ROOT_DIR_PATH', plugin_dir_path( __FILE__ ) );
